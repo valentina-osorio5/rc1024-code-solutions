@@ -2,8 +2,6 @@ const heroes = ['mom', 'family', 'cousin', 'changemakers'];
 
 let randomNumber = Math.random();
 
-console.log('Math.random:', randomNumber);
-
 randomNumber = heroes.length * randomNumber;
 
 const randomIndex = Math.floor(randomNumber);
@@ -40,3 +38,23 @@ library.unshift(css);
 library.splice(1, 1);
 
 console.log('library', library);
+
+const fullName = 'Valentina Osorio';
+const firstAndLastName = fullName.split(' ');
+console.log('fullName:', firstAndLastName);
+const firstName = 'Valentina';
+const sayMyName = firstName.toUpperCase();
+console.log('sayMyName:', sayMyName);
+
+const employee = {
+  name: 'Val',
+  age: 30,
+  position: 'Freelancer',
+};
+
+const employeeKeys = Object.keys(employee);
+console.log('employeeKeys:', employeeKeys);
+const employeeValues = Object.values(employee);
+console.log('employeeValues:', employeeValues);
+const employeePairs = Object.entries(employee);
+console.log('employeePairs:', employeePairs);
