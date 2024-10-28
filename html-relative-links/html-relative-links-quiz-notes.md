@@ -5,13 +5,13 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - How do you indicate the relative link to a parent directory?
-
+../<name of folder>/<name of file>
 - How do you indicate the relative link to a child directory?
 
 - How do you indicate the relative link to a grand parent directory?
-
+../<name of directory/<name of folder>/<name of file>
 - How do you indicate the relative link to the same directory?
-
+/<name of directory>
 ## Notes
 
 All student notes should be written here.
