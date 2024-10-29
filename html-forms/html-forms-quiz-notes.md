@@ -8,7 +8,7 @@ Answer the following questions in the provided markdown file before turning in t
   A form is a container for different types of inputs you need to collect from whoever will be filling it out.
 
 - Give five examples of form control elements.
-  checkboxes, radio buttons, dropdown lists, input fields/ comments, fieldset
+  label, text area, input, select, option
 
 - Give three examples of `type` attribute values for HTML `<input>` elements.
   text, e-mail, password
