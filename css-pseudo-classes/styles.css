@@ -1,0 +1,23 @@
+.button {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  tr:nth-child(even) {
+    background-color: #898888;
+  }
+}
+
+table th {
+  background-color: rgb(86, 86, 216);
+}
