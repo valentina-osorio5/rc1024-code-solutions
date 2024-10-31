@@ -13,7 +13,8 @@ body {
   flex-direction: row;
   max-width: 800px;
   margin: 0 auto;
-  border: solid green;
+
+  /* border: solid green; */
 }
 
 #image {
@@ -32,7 +33,8 @@ body {
 
 .column-one-third {
   flex-basis: 33.33%;
-  border: solid red;
+
+  /* border: solid red; */
 }
 
 .column-one-fourth {
@@ -40,6 +42,7 @@ body {
 }
 
 .column-two-thirds {
-  flex-basis: 2/3;
-  border: solid purple;
+  flex-basis: 66.66%;
+
+  /* border: solid purple; */
 }
