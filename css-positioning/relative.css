@@ -11,21 +11,32 @@
 }
 
 #bulbasaur {
-  /* your code here */
+  position: relative;
+  top: 20px;
+  left: 30px;
 }
 
 #charmander {
   /* your code here */
+  position: relative;
+  top: 40px;
+  left: 30px;
 }
 
 #squirtle {
-  /* your code here */
+  position: relative;
+  top: 85px;
+  left: 30px; /* your code here */
 }
 
 #pikachu {
-  /* your code here */
+  position: relative;
+  top: 160px;
+  left: 30px;
 }
 
 #jigglypuff {
-  /* your code here */
+  position: relative;
+  top: 250px;
+  left: 30px;
 }
