@@ -11,6 +11,7 @@ Answer the following questions in the provided markdown file before turning in t
   You can rotate, scale, skew, or translate with transform.
 
 - Give four examples of CSS transform functions.
+- -scale, skew, translate, rotate
 
 ## Notes
 
