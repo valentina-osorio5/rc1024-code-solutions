@@ -12,10 +12,10 @@ function writeTodos(): void {
   localStorage.setItem('todos-storage', todosJSON);
 }
 
-const $submitButton = document.querySelector('.btn');
-if (!$clickbutton) throw new Error('$submitButton does not exist');
-function handleSubmit(event) {
-  console.log('submit button clicked');
-  writeTodos();
+function readTodos(): Todo[] {
+  const todosJSON = localStorage.getItem('todos-storage');
+  if (todosJSON) {
+    return JSON.parse(todosJSON);
+  }
+  return [];
 }
-$submitButton.addEventListener('click', handleSubmit);
