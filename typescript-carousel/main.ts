@@ -38,7 +38,7 @@ function autoPlay(): void {
   timerId = setTimeout(function () {
     // Show the next image in the carousel
     showIndex(getNextIndex());
-  }, 3000);
+  }, 3001);
 }
 
 function getNextIndex(): number {
