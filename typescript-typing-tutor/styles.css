@@ -1,0 +1,27 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current {
+  border-bottom: 3px solid;
+}
+
+.current.incorrect {
+  color: rgb(247, 7, 7);
+}
+
+.correct {
+  color: rgb(27, 205, 27);
+}
