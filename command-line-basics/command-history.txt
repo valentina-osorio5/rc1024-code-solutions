@@ -1,0 +1,500 @@
+  119  cd typescript-modal
+  120  npx tsc --watch
+  121  cd ..
+  122  git statsu
+  123  git status
+  124  git add typescript-modal/
+  125  git status
+  126  git commit -m "completed typescript-modal: Valentina Osorio"
+  127  git add typescript-modal
+  128  git status
+  129  git commit -m "completed typescript-modal: Valentina Osorio"
+  130  git push origin typescript-modal
+  131  git switch main
+  132  git pull origin main
+  133  git branch typescript-light-bulb
+  134  git switch typescript-light-bulb
+  135  git status
+  136  git add typescript-light-bulb
+  137  git status
+  138  git commit -m "completed typescript-light-bulb: Valentina Osorio"
+  139  git push origin typescript-light-bulb
+  140  git switvh main
+  141  git switch main
+  142  git pull origin main
+  143  git branch typescript-typing-tutor
+  144  git switch typescript-typing-tutor
+  145  git add typescript-typing-tutor
+  146  git status
+  147  git commit -m "completed typescript-typing-tutor: Valentina Osorio" --no-verify
+  148  git switch main
+  149  git pull origin main
+  150  git branch typescript-forms
+  151  git switch typescript-forms
+  152  cd typescript-forms
+  153  npx tsc --watch
+  154  cd ..
+  155  git status
+  156  git add typescript-forms/
+  157  git status
+  158  git commit -m "completed typescript-forms: Valentina Osorio" 
+  159  git push origin typescript-forms
+  160  git switch main
+  161  git pull origin main 
+  162  git branch css-media-queries
+  163  git switch css-media-queries
+  164  git status
+  165  git add css-media-queries
+  166  git status
+  167  git add css-media-queries
+  168  git status
+  169  git commit -m "completed css-media-queries: Valentina Osorio" 
+  170  git push origin css-media-queries
+  171  git switch main
+  172  git pull origin main
+  173  git branch css-transitions-and-transforms
+  174  git switch css-transitions-and-transforms
+  175  git status
+  176  git add css-transitions-and-transforms
+  177  git status
+  178  git commit -m "completed css-transitions-and-transforms: Valentina Osorio" 
+  179  git push origin css-transitions-and-transforms
+  180  git switch main
+  181  git status
+  182  git branch css-responsive-layout
+  183  git switch css-responsive-layout
+  184  git status
+  185  git add css-responsive-layout
+  186  git status
+  187  git commit -m "completed css-responsive-layout: Valenina Osorio"
+  188  git push origin css-responsive-layout
+  189  git switch main
+  190  git pull origin main
+  191  git branch typescript-view-swapping
+  192  git switch typescript-view-swapping
+  193  cd typescript-view-swapping
+  194  npx tsc --watch
+  195  .. cd
+  196  cd ..
+  197  git switch typescript-view-swapping
+  198  .. cd
+  199  cd ..
+  200  cd -
+  201  cd -
+  202  cd-
+  203  cd -
+  204  git switch typescript-view-swapping
+  205  cd-
+  206  cd--
+  207  cd --
+  208  cd -3
+  209  popd
+  210  pushd
+  211  cd -
+  212  cd-
+  213  $ cd /workspaces/rc1024-code-solutions/typescript-view-swapping
+  214  $cd /workspaces/rc1024-code-solutions
+  215  git switch main
+  216  git status
+  217  git add typescript-view-swapping
+  218  git status
+  219  git commit -m "almost done typescript-view-swapping: Valentina Osorio" --no-verify
+  220  git switch main
+  221  git pull origin main
+  222  git branch typescript-and-json
+  223  git switch typescript-and-json
+  224  cd typescript-and-json
+  225  npx tsc --watch
+  226  git status
+  227  git add typescript-and-json
+  228  git status
+  229  git add typescript-and-json
+  230  git status
+  231  git commit -m "completed typescript-and-json: Valentina Osorio" 
+  232  git push origin typescript-and-json
+  233  git switch main
+  234  git pull origin main
+  235  git branch typescript-local-storage
+  236  git switch typescript-local-storage
+  237  git status
+  238  git status
+  239  git add typescript-local-storage
+  240  git status
+  241  git commit -m "work in progress typescript-local-storage: Valentina Osorio" --no-verify
+  242  git switch main
+  243  cd/workspaces
+  244  cd /workspaces
+  245  git clone git@github.com:valentina-osorio5/code-journal.git
+  246  cd code-journal
+  247  npm install
+  248  pull origin main
+  249  git pull origin main
+  250  git branch issue-1
+  251  git switch issue-1
+  252  git status
+  253  git add issue-1
+  254  git commit -m "in progress header container issue #1"
+  255  git status
+  256  git add issue-1
+  257  git add "issue-1"
+  258  git add  css/layout.css
+  259  git status
+  260  git add index.html
+  261  git status
+  262  git commit -m "in progress header container issue #1"
+  263  git commit -m "in progress header container issue #1"
+  264  git status
+  265  git add css/layout.css
+  266  git status
+  267  git commit -m "in progress header container issue #1"
+  268  git status
+  269  git add css/layout.css
+  270  git add index.html
+  271  git status
+  272  git commit -m "in progress making the layout dynamic issue #1" 
+  273  git add css/layout.css
+  274  git status
+  275  git commit -m "in progress making the layout dynamic issue #1" 
+  276  git commit -m "work in progress dynamic layout issue #1" --no-verify
+  277  cd ts
+  278  npx tsc --watch
+  279  cd ..
+  280  git status
+  281  git add js/
+  282  git status
+  283  git add css/layout.css, css/styles.css, index.html,  ts/main.ts
+  284  git add issue-1
+  285  git add css/layout.css
+  286  git add css/styles.css
+  287  git add index.html
+  288  git add ts/main.ts
+  289  git status
+  290  git commit -m "working on the event listener" --no-verify
+  291  git switch main 
+  292  npx tsc --watch
+  293  git status
+  294  git add css/styles.css
+  295  git add index.html
+  296  git add js/main.js
+  297  git add ts/main.ts
+  298  git status
+  299  git commit -m "in progress responsive design and finished event listener issue #1" --no-verify
+  300  git switch issue-1
+  301  cd ts
+  302  npx --watch
+  303  npx tsc --watch
+  304  git switch typescript-local-storage
+  305  cd typescript-local-storage
+  306  npx tsc --watch
+  307  git add typescript-local-storage
+  308  cd ..
+  309  git add typescript-local-storage
+  310  git status
+  311  cd typescript-local-storage
+  312  npx tsc --watch
+  313  cd..
+  314  cd ..
+  315  git add typescript-local-storage
+  316  git status
+  317  git commit -m "completed typescript local storage: Valentina Osorio"
+  318  git commit -m "completed typescript local storage: Valentina Osorio" --no-verify
+  319  git switch main
+  320  git switch typescript-view-swapping
+  321  cd typescript-view-swapping
+  322  npx tsc --watch
+  323  cd ..
+  324  git status
+  325  git add typescript-view-swapping
+  326  git status
+  327  git commit -m "teacher's solution typescript view swapping: Valentina Osorio" 
+  328  git push typescript-view-swapping
+  329  git push origin typescript-view-swapping
+  330  git switch main 
+  331  cd ts
+  332  npx tsc --watch
+  333  git add .
+  334  git status
+  335  git add. 
+  336  git add .
+  337  git status
+  338  cd ..
+  339  git add .
+  340  git status
+  341  git commit -m "working on the handlePenClick function for the ul event listener" --no-verify
+  342  cd ts
+  343  npx tsc --watch
+  344  cd ..
+  345  git add .
+  346  git sttaus
+  347  git status
+  348  git commit -m "completed issue/feature 2" 
+  349  git commit -m "completed issue/feature 2" --no-verify
+  350  git push origin feature-2
+  351  cd ts
+  352  npx tsc --watch
+  353  cd ..
+  354  git add .
+  355  git status
+  356  git commit -m "final commit hopefully" --no-verify
+  357  git push origin 
+  358  git push origin feature-2
+  359  cd ts
+  360  npx tsc --watch
+  361  cd ..
+  362  git add .
+  363  git status
+  364  git commit -m "final commit" --no-verify
+  365  git push origin feature-2
+  366  git switch main
+  367  git pull origin main 
+  368  git branch issue-3
+  369  git switch issue-3
+  370  git merge main
+  371  git status
+  372  git switch main 
+  373  git pull origin main
+  374  git reset --hard
+  375  git status
+  376  git pull origin main
+  377  git switch issue-3
+  378  git merge main
+  379  cd ts
+  380  npx tsc --watch
+  381  cd ts
+  382  npx tsc --watch
+  383  cd ..
+  384  git add .
+  385  git status
+  386  git commit -m "halfway through editing the callback function" --no-verify
+  387  cd ts 
+  388  npx tsc --watch
+  389  cd /workspaces
+  390  git clone git@github.com:arazon005/week-planner.git
+  391  cd week-planner
+  392  npm install
+  393  cd/workspaces
+  394  cd /workspaces
+  395  git clone git@github.com:arazon005/week-planner.git
+  396  cd week planner
+  397  cd week-planner
+  398  git pull origin main
+  399  git pull origin main 
+  400  git add .
+  401  git status
+  402  git push origin main
+  403  git commit -m "finished table" --no-verify
+  404  git push origin main
+  405  git pull origin main
+  406  npx tsc --watch
+  407  git add .
+  408  git status
+  409  git commit -m "adding event listeners" --no-verify
+  410  git push origin main
+  411  git pull origin main
+  412  npx tsc --watch
+  413  add .
+  414  git add .
+  415  git staus
+  416  git status
+  417  git commit -m "finished first feature" --no-verify
+  418  git push origin main
+  419  git pull origin main
+  420  npx tsc --watch
+  421  add .
+  422  git add .
+  423  git status
+  424  git commit -m "progress on issue-2 / view swapping" 
+  425  git commit -m "progress on issue-2 / view swapping" --no-verify
+  426  git push origin main
+  427  cd ..
+  428  git switch code-journal
+  429  .. cd
+  430  git branch --list
+  431  /workspaces/code-journal
+  432  .. cd
+  433  cd
+  434  ts/main.ts
+  435  cd /workspaces/code-journal 
+  436  cd ts
+  437  npx tsc --watch
+  438  add .
+  439  git status
+  440  cd ..
+  441  git add .
+  442  git status 
+  443  git commit -m "still working on the submit event handler" --no-verify
+  444  cd ts 
+  445  npx tsc --watch
+  446  cd ..
+  447  git add .
+  448  git status
+  449  git commit -m "completed issue 3!" --no-verify
+  450  git push origin main 
+  451  git push origin issue-3
+  452  git status
+  453  git add typescript-carousel
+  454  git status
+  455  git commit -m "completed typescript carousel: Valentina Osorio" --no-verify
+  456  git push origin typescript-carousel
+  457  cd ..
+  458  .. cd
+  459  git switch typescript-carousel
+  460  git status
+  461  git commit -m "complete typescript-carousel: Valentina Osorio" --no-verify
+  462  git add typescript-carousel
+  463  git status
+  464  git commit -m "complete typescript-carousel: Valentina Osorio" --no-verify
+  465  git push origin typescript-carousel
+  466  ls
+  467  git status
+  468  git add typescript-carousel
+  469  git status
+  470  git commit -m "complete typescript-carousel: Valentina Osorio"
+  471  git status
+  472  git add typescript-carousel
+  473  git status
+  474  git commit -m "completed typescript-carousel: Valentina Osorio" 
+  475  git status
+  476  git push origin typescript-carousel
+  477  git switch main
+  478  git branch 
+  479  git pull
+  480  git remote prune origin 
+  481  git pull
+  482  git fetch --prune
+  483  git branch typescript-destructuring
+  484  git switch typescript-destructuring
+  485  cd typescript-destructuring
+  486  npx tsc --watch
+  487  cd typescript-operators
+  488  npx tsc --watch
+  489  cd ..
+  490  git add typescript-operators
+  491  git status
+  492  git commit -m "completed typescript-operators: Valentina Osorio" 
+  493  git push origin typescript-operators
+  494  git switch main
+  495  git pull 
+  496  git pull origin main
+  497  git branch array-methods
+  498  git switch array-methods
+  499  cd array-methods
+  500  npx tsc --watch
+  501  git add array-methods
+  502  git status
+  503  cd array-methods
+  504  cd array-methods
+  505  npx tsc --watch
+  506  npx tsc --watch
+  507  cd ..
+  508  git add array-methods
+  509  git status
+  510  git commit -m "completed array-methods: Valentina Osorio" 
+  511  git add array-methods
+  512  git status
+  513  git commit -m "completed array-methods: Valentina Osorio" 
+  514  git push origin array-methods
+  515  git switch main
+  516  git switch typescript-local-storage
+  517  git add typescript-local-storage
+  518  git status
+  519  git switch main
+  520  git commit -m "almost done local storage: Valentina Osorio" --no-verify
+  521  git push origin typescript-local-storage
+  522  git switch main
+  523  git pull 
+  524  git switch typescript-typing-tutor
+  525  cd typescript-typing-tutor
+  526  npx tsc --watch
+  527  cd ..
+  528  git add typescript-typing-tutor
+  529  git status
+  530  git commit -m "typescript-typing-tutor"
+  531  git push origin typescript-typing-tutor
+  532  git switch main
+  533  git pull
+  534  git branch command-line-basics
+  535  git switch command-line-basics
+  536  cd name-of-exercise
+  537  cd command-line-basics
+  538  man man
+  539  man cat
+  540  cat
+  541  man cat
+  542  man cat
+  543  cat
+  544  man cat
+  545  cat [laziness.txt]
+  546  cat man
+  547  man cat
+  548  man man
+  549  file
+  550  cat [laziness.txt]
+  551  cat laziness.txt
+  552  cat impatience.txt
+  553  cat hubris.txt
+  554  cat laziness.txt impatience.txt hubris.txt
+  555  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  556  cat three-virtues.txt
+  557  ls
+  558  man ls
+  559  man ls
+  560  ls
+  561  ls -a
+  562  ls -F
+  563  ls lfz-staff
+  564  ls -a lfz-staff
+  565  ls -F lfz-staff
+  566  man ls
+  567  man ls
+  568  ls -aF lfz-staff > lfz-staff/contents.txt
+  569  cat lfz-staff/contents.txt
+  570  man pwd
+  571  pwd
+  572  pwd > i-was-here.txt
+  573  ls
+  574  cat i-was-here.txt
+  575  man echo
+  576  each 'Hello, World!'
+  577  echo 'Hello, World!'
+  578  echo 'Hello, World!' > hello.txt
+  579  ls 
+  580  cat hello.txt
+  581  man touch
+  582  touch tag-youre-it.txt
+  583  touch snoot/boop.txt
+  584  ls snoot
+  585  ls snoot/
+  586  man mkdir
+  587  man mkdir
+  588  mkdir parent
+  589  ls parent/
+  590  ls parent
+  591  ls
+  592  mkdir -p child
+  593  mkdir -p parent/child
+  594  mkdir -p child/grandchild
+  595  mkdir -p parent/child/grandchild
+  596  touch parent/child/grandchil/.gitkeep
+  597  touch parent/child/grandchild/.gitkeep
+  598  ls -a
+  599  ls -a parent
+  600  ls -a parent/child
+  601  la -a parent/child/grandchild
+  602  ls -a grandchild
+  603  man mv
+  604  mv pokiemans pokemon
+  605  ls
+  606  man rm
+  607  rm lol.txt
+  608  ls
+  609  rm -r kill-me/
+  610  ls
+  611  man cp
+  612  cp and-then.txt no-and-then.txt
+  613  ls
+  614  cat and-then.txt
+  615  cat no-and-then.txt
+  616  man history
+  617  history
+  618  history > command-history.txt
