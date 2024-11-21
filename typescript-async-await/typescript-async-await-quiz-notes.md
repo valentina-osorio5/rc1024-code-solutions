@@ -39,7 +39,7 @@ handleError(error);
 The catch line in the code block tells you what to do if the promise rejects, and it throws an error if needed.
 
 - What happens if you forget to use `await` on a Promise? In that case, what happens to the Promise rejection?
-  If you forget to use await on a promise, it won't wait for the callback function to execute... not sure what would happen, the code probably wouldn't fun as expected.
+  If you forget to use await on a promise, it won't wait for the callback function to execute... the promise stays in the pending state, but we can't do anything with a reject or a resolve. 
 
 - Which style of asynchronous programming do you prefer — callbacks, `Promise.then`, or `async/await`? Why?
   I like callbacks because they're familiar but also like the async/await style because they don't seem so difficult to understand/ use.
