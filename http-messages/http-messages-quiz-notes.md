@@ -20,7 +20,7 @@ Answer the following questions in the provided markdown file before turning in t
   A protocol version, a status code and a status text.
 
 - What are HTTP headers?
-  HTTP headers follow the same structure as any other header: a case-insensitive string followed by a colon (':') and a value whose structure depends upon the type of the header. The whole header, including its value, presents as a single line.
+  HTTP headers follow the same structure as any other header: a case-insensitive string followed by a colon (':') and a value whose structure depends upon the type of the header. The whole header, including its value, presents as a single line. - The metadata a server and client need to talk to each other. 
 
 - Where would you go if you wanted to learn more about a specific HTTP Header?MDN Documentation:
   https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
