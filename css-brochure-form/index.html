@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Challenge - Brochure Form</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>LEARN MORE</h1>
+
+    <form action="https://example.com/register" method="post">
+      <label class="textright" for="companyemail">COMPANY EMAIL</label>
+      <br />
+      <input
+        type="text"
+        id="companyemail"
+        name="companyemail"
+        class="diffont"
+        placeholder="sally@company.co"
+        required />
+      <br />
+      <br />
+      <label class="textright" for="where">NAME</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="diffont"
+        placeholder="Sally Smith"
+        required />
+      <br />
+      <br />
+
+      <label class="textright" for="where">WHERE ARE YOU HIRING?</label>
+      <br />
+      <input
+        type="text"
+        id="where"
+        name="where"
+        class="diffont"
+        placeholder="City, Country"
+        required />
+
+      <br />
+      <br />
+
+      <label class="textright" for="howmany"
+        >HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label
+      ><br />
+      <select name="howmany" id="howmany" class="wide">
+        <option value="">1-2 Engineers</option>
+      </select>
+      <br />
+      <br />
+
+      <button type="submit" class="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
