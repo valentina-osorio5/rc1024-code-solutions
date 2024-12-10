@@ -1,14 +1,14 @@
 import './Image.css';
 
 type Props = {
-  image: string;
+  imageSRC: string;
 };
 
-export function Image({ image }: Props) {
+export function Image({ imageSRC }: Props) {
   return (
     <div className="d-flex justify-content-center">
       <div className="width-50 ">
-        <img className="image-fill" src={image} alt="space-image" />
+        <img className="image-fill" src={imageSRC} alt="space-image" />
       </div>
     </div>
   );
