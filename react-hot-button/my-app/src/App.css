@@ -5,43 +5,38 @@
   text-align: center;
 }
 
-#hot-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  background-color: red;
+.hot-button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(70, 70, 70);
 }
 
-.darkpurple {
+.hot-button.darkpurple {
   background-color: #351c75;
   color: white;
 }
 
-.lightpurple {
+.hot-button.lightpurple {
   background-color: #674ea7;
   color: white;
 }
 
-.orange {
+.hot-button.orange {
   background-color: #e06666;
   color: white;
 }
 
-.lightorange {
+.hot-button.lightorange {
   background-color: #f6b26b;
   color: black;
 }
 
-.yellow {
+.hot-button.yellow {
   background-color: #fffe05;
   color: black;
 }
 
-.white {
+.hot-button.white {
   background-color: white;
   color: black;
 }
