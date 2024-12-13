@@ -4,44 +4,55 @@ type Props = {
   items: string[];
 };
 
-export function RotatingBanner({ items }) {
+export function RotatingBanner({ items }: Props) {
   // const [count, setCount] = useState(0);
   console.log(items);
 
   return (
     <div>
-      <Header items={items[2]} />
+      <Header title={items[2]} />
       <PrevButton />
-      <Indicators />
+      <Indicators count={items.length} activeIndex={0} />
       <NextButton />
     </div>
   );
 }
 
-export function Header({ items }) {
-  return <h1>{items}</h1>;
+type HeaderProps = {
+  title: string;
+};
+
+export function Header({ title }: HeaderProps) {
+  console.log('title prop Header', title);
+  return <h1>{title}</h1>;
 }
 
 export function PrevButton() {
-  return <h2 className="square">Prev</h2>;
+  return <button className="square">Prev</button>;
 }
 
-export function Indicators() {
-  // const buttons = [];
-  // for (let i = 0; i < count; i++) {
-  //   buttons.push(<button>Label</button>);
-  // }
-  return;
-  <>
-    <p>0</p>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>5</p>
-  </>;
+type IndicatorProps = {
+  count: number;
+  activeIndex: number;
+};
+
+export function Indicators({ count, activeIndex }: IndicatorProps) {
+  const buttons = [];
+  for (let i = 0; i < count; i++) {
+    buttons.push(
+      <button
+        style={{
+          backgroundColor: activeIndex === i ? 'lightblue' : 'white',
+          color: 'black',
+        }}
+        key={i}>
+        {i}
+      </button>
+    );
+  }
+  return <div>{buttons}</div>;
 }
 
 export function NextButton() {
-  return <h2 className="square">Next</h2>;
+  return <button className="square">Next</button>;
 }
