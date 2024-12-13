@@ -6,10 +6,21 @@ type Props = {
 
 export function RotatingBanner({ items }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(items);
+  console.log('currentIndex', currentIndex);
 
-  function updateIndex() {
-    console.log('updateIndex fired');
+  function handlePrevClick() {
+    console.log('handlePrevClick fired');
+    if (currentIndex < items.length - 1 || currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+    if (currentIndex <= 0) {
+      setCurrentIndex(5);
+    }
+    console.log('currentIndex Prev', currentIndex);
+  }
+
+  function handleNextClick() {
+    console.log('handleNextClick fired');
     if (currentIndex < items.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
@@ -17,12 +28,21 @@ export function RotatingBanner({ items }: Props) {
     }
   }
 
+  function handleIndicatorClick(i: number) {
+    console.log('handleIndicatorClick fired');
+    setCurrentIndex(i);
+  }
+
   return (
     <div>
       <Header title={items[currentIndex]} />
-      <PrevButton />
-      <Indicators count={items.length} activeIndex={currentIndex} />
-      <NextButton />
+      <PrevButton onHandlePrevClick={handlePrevClick} />
+      <Indicators
+        onHandleIndicatorClick={handleIndicatorClick}
+        count={items.length}
+        activeIndex={currentIndex}
+      />
+      <NextButton onHandleNextClick={handleNextClick} />
     </div>
   );
 }
@@ -32,24 +52,37 @@ type HeaderProps = {
 };
 
 export function Header({ title }: HeaderProps) {
-  console.log('title prop Header', title);
   return <h1>{title}</h1>;
 }
 
-export function PrevButton() {
-  return <button className="square">Prev</button>;
+type PrevButtonProps = {
+  onHandlePrevClick: () => void;
+};
+
+export function PrevButton({ onHandlePrevClick }: PrevButtonProps) {
+  return (
+    <button onClick={onHandlePrevClick} className="square">
+      Prev
+    </button>
+  );
 }
 
 type IndicatorProps = {
   count: number;
   activeIndex: number;
+  onHandleIndicatorClick: (i: number) => void;
 };
 
-export function Indicators({ count, activeIndex }: IndicatorProps) {
+export function Indicators({
+  count,
+  activeIndex,
+  onHandleIndicatorClick,
+}: IndicatorProps) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
     buttons.push(
       <button
+        onClick={() => onHandleIndicatorClick(i)}
         style={{
           backgroundColor: activeIndex === i ? 'lightblue' : 'white',
           color: 'black',
@@ -63,6 +96,14 @@ export function Indicators({ count, activeIndex }: IndicatorProps) {
   return <div>{buttons}</div>;
 }
 
-export function NextButton() {
-  return <button className="square">Next</button>;
+type NextButtonProps = {
+  onHandleNextClick: () => void;
+};
+
+export function NextButton({ onHandleNextClick }: NextButtonProps) {
+  return (
+    <button onClick={onHandleNextClick} className="square">
+      Next
+    </button>
+  );
 }
