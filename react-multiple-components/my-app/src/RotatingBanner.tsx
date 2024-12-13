@@ -5,14 +5,23 @@ type Props = {
 };
 
 export function RotatingBanner({ items }: Props) {
-  // const [count, setCount] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   console.log(items);
+
+  function updateIndex() {
+    console.log('updateIndex fired');
+    if (currentIndex < items.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(0);
+    }
+  }
 
   return (
     <div>
-      <Header title={items[2]} />
+      <Header title={items[currentIndex]} />
       <PrevButton />
-      <Indicators count={items.length} activeIndex={0} />
+      <Indicators count={items.length} activeIndex={currentIndex} />
       <NextButton />
     </div>
   );
@@ -50,6 +59,7 @@ export function Indicators({ count, activeIndex }: IndicatorProps) {
       </button>
     );
   }
+
   return <div>{buttons}</div>;
 }
 
