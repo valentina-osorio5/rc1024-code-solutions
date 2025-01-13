@@ -42,6 +42,7 @@ next()
   The request object and the response object as well as the next function.
 
 - How do you specify and retrieve route parameters?
+  We speciyf the route parameters with a colon and name of the parameter and retrieve it with the params property. 
 
 ## Notes
 
