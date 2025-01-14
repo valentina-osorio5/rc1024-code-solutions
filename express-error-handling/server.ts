@@ -8,46 +8,53 @@ type Note = {
 
 const app = express();
 
-app.get('/api/notes', async (req, res) => {
+app.get('/api/notes', async (req, res, next) => {
   try {
     const notes = await readNotes();
     res.send(notes);
   } catch (err) {
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
+    // console.error(err);
+    // res.status(500).send({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.post('/api/notes', async (req, res) => {
+app.post('/api/notes', async (req, res, next) => {
   try {
     const { content } = req.query;
+    // const content = req.query.content;
     if (content === undefined) {
-      res.status(400).send({ error: 'content is required' });
-      return;
+      // res.status(400).send({ error: 'content is required' });
+      // return;
+      throw new ClientError(400, 'content is required');
     }
     const note = {
       noteId: Math.floor(100 * Math.random()),
       content: String(content),
     };
-    await writeNote(note);
+    await writeNote(note); // rejected with error
     res.send(note);
   } catch (err) {
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
+    // console.error(err);
+    // res.status(500).send({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.put('/api/notes/:noteId', async (req, res) => {
+app.put('/api/notes/:noteId', async (req, res, next) => {
+  console.log('endpoint hit');
   try {
     const { noteId } = req.params;
     const { content } = req.query;
     if (noteId === undefined) {
-      res.status(400).send({ error: 'noteId is required' });
-      return;
+      // res.status(400).send({ error: 'noteId is required' });
+      // return;
+      throw new ClientError(400, 'noteId is required');
     }
     if (content === undefined) {
-      res.status(400).send({ error: 'content is required' });
-      return;
+      // res.status(400).send({ error: 'content is required' });
+      // return;
+      throw new ClientError(400, 'content is required');
     }
     const note = {
       noteId: +noteId,
@@ -56,23 +63,27 @@ app.put('/api/notes/:noteId', async (req, res) => {
     await writeNote(note);
     res.send(note);
   } catch (err) {
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
+    // console.error(err);
+    // res.status(500).send({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.delete('/api/notes/:noteId', async (req, res) => {
+app.delete('/api/notes/:noteId', async (req, res, next) => {
+  console.log('delete route hit');
   try {
     const { noteId } = req.params;
-    if (noteId === undefined) {
-      res.status(400).send({ error: 'noteId is required' });
-      return;
+    if (typeof noteId !== 'number') {
+      // res.status(400).send({ error: 'noteId is required' });
+      // return;
+      throw new ClientError(400, 'noteId should be a number');
     }
     await deleteNote(+noteId);
     res.send(`deleted ${noteId}`);
   } catch (err) {
-    console.error(err);
-    res.status(500).send({ error: 'an unexpected error occurred' });
+    // console.error(err);
+    // res.status(500).send({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
