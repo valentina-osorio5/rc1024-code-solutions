@@ -47,7 +47,6 @@ app.get('/api/grades/:gradeId', async (req, res, next) => {
 
     const sql = `
     select "gradeId","name","course","score"
-
     from "grades"
     where "gradeId" = $1
     `;
@@ -77,11 +76,11 @@ app.post('/api/grades', async (req, res, next) => {
       throw new ClientError(400, `name, course and score are required`);
     }
 
-    if (!Number.isInteger(+score) && score > 0 && score <= 100) {
-      // score of 1000 did not throw an error, the above needs to be edited
-      // How to throw an error to not allow duplicates?
-
-      throw new ClientError(400, `Non-Integer score: ${score} `);
+    if (!Number.isInteger(+score) || score < 0 || score > 100) {
+      throw new ClientError(
+        400,
+        `Score must be an integer between 0 -100, score entered: ${score} `
+      );
     }
 
     const sql = `
@@ -94,7 +93,7 @@ app.post('/api/grades', async (req, res, next) => {
     const newGrade = result.rows[0];
     console.log(newGrade);
 
-    res.status(200).send(newGrade);
+    res.status(201).send(newGrade);
   } catch (err) {
     next(err);
   }
@@ -110,13 +109,19 @@ app.put('/api/grades/:gradeId', async (req, res, next) => {
     console.log(gradeId);
 
     if (!name || !course || !score) {
-      throw new ClientError(400, `name, course and score are required`);
+      throw new ClientError(400, `name, course, and score are required`);
+    }
+
+    if (!Number.isInteger(+score) || score < 0 || score > 100) {
+      throw new ClientError(
+        400,
+        `Score must be an integer between 0 -100, score entered: ${score} `
+      );
     }
 
     if (!Number.isInteger(+gradeId)) {
       throw new ClientError(400, `Non-Integer gradeId: ${gradeId} `);
     }
-    // do we need to throw this error for score as well? can we combine them?
 
     if (gradeId === undefined) {
       throw new ClientError(400, 'gradeId is required');
@@ -147,8 +152,6 @@ app.put('/api/grades/:gradeId', async (req, res, next) => {
   }
 });
 
-// this is not finding any of the proven gradeIds 404 not found/ gradeId undefined?
-
 app.delete('/api/grades/:gradeId', async (req, res, next) => {
   console.log('hit delete /api/grades/:gradeId');
   try {
@@ -165,8 +168,10 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
 
     const sql = `
     delete from "grades"
-    where "gradeId" = $1;
+    where "gradeId" = $1
+    returning *;
     `;
+
     const params = [gradeId];
     const result = await db.query(sql, params);
     const grade = result.rows[0];
